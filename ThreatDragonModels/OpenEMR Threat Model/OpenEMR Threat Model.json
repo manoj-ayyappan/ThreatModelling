@@ -1411,7 +1411,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Non-repudiation",
-                  "description": "Technique: LINDDUN\nCard: Credentials non-repudiation 5\nDescription: The retrieved data contains undeniable information.\n\nIn case medications or prescriptions are added for a patient, and a log is generated for this, then personal details of the patient can be obtained from the log.",
+                  "description": "Technique: LINDDUN\nCard: Non-repudiation of retrieved data Nr5\nDescription: The retrieved data contains undeniable information.\n\nIn case medications or prescriptions are added for a patient, and a log is generated for this, then personal details of the patient can be obtained from the log.",
                   "mitigation": "A randomly generated user ID should be used to obfuscate the related patient. Special coding review guidelines should be enforced to make sure that sensitive information is not logged.",
                   "modelType": "Generic",
                   "new": false,
