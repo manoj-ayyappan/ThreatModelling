@@ -1663,8 +1663,8 @@
                 "text": "OpenEMR\nPatient\nPortal"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1678,12 +1678,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "4b1b11a0-fa16-444f-99b9-197f4e6e565a",
+                  "title": "Formatted text and images",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Technique: Elevation of privilege\nCard: Elevation of privilege Q\nDescription: You include user generated content within your page, possibly including the content of random URLs\n\nThe secure chat and secure messaging features of OpenEMR include a WYSIWIG editor that allows you to create formatted text and image content.",
+                  "mitigation": "Any form of user generated content needs to be sanitized using a globally accepted standard.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1887,6 +1901,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 9
+    "threatTop": 10
   }
 }
