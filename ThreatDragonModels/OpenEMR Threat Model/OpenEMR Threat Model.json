@@ -1864,6 +1864,19 @@
                   "new": false,
                   "number": 6,
                   "score": ""
+                },
+                {
+                  "id": "3704069e-9eda-458a-bdfc-6ec7d164a1b1",
+                  "title": "Multiple appointments leading to DoS",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Technique: Elevation of privilege\nCard: Denial of Service K\nDescription: An attacker can amplify a Denial of Service attack through this component with amplification on the order of 100:1\n\nMultiple appointments can be generated through a script which causes the UI to slow down considerably. This was also observed while fuzzing using ZAP. After this operation, the OpenEMR system takes very long to open up and respond.",
+                  "mitigation": "There should be some CAPTCHA mechanism to limit the number of requests being made and to ensure that requests are not being made through scripts.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
                 }
               ]
             }
@@ -1874,6 +1887,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
