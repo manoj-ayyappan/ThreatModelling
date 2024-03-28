@@ -1671,6 +1671,19 @@
                   "new": false,
                   "number": 11,
                   "score": ""
+                },
+                {
+                  "id": "a719d9ec-3810-4af7-9993-66dbc55904e0",
+                  "title": "Integer overflow",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Technique: Cornucopia\nCard: Cornucopia 2\nDescription: Lee can bypass application controls because dangerous/risky programming language functions have been used instead of safer alternatives, or there are type conversion errors, or because the application is unreliable when an external resource is unavailable, or there are race conditions, or there are resource initialization or allocation issues, or overflows can occur\n\nIn the patient's prescription section, while creating a new prescription, the \"# of tablets\" field can be given a value of \"999999999999\" (9 twelve times), which will lead to an integer buffer-overflow, generating a garbage value, instead of a user-entered value.",
+                  "mitigation": "Server side validation should ensure that user input is within accepted limits.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
                 }
               ]
             }
@@ -1967,6 +1980,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 15
+    "threatTop": 16
   }
 }
