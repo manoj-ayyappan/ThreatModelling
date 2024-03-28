@@ -1462,8 +1462,8 @@
                 "text": "Admin"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1477,9 +1477,23 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "8e465165-db2f-4c41-8be5-e770549285a3",
+                  "title": "Default credentials",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Technique: Elevation of privilege\nCard: Spoofing K\nDescription: System ships with a default admin password and does not force a change\n\nThe default password for the \"admin\" user is \"pass\" in OpenEMR.",
+                  "mitigation": "The system should ask to update the default password on startup",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1598,8 +1612,8 @@
                 "text": "OpenEMR \nPatient\nRecords"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1613,12 +1627,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "04df4a3f-8388-4b17-a2af-1bee3e0620a3",
+                  "title": "Private RSA keys",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Technique: Elevation of privilege\nCard: Information disclosure J\nDescription: An attacker can discover the fixed key being used to encrypt\n\nWe have found multiple private RSA keys for OpenSSL and LDAP inside OpenEMR's GitHub repository\nThis threat applies to all the processes in this diagram.",
+                  "mitigation": "The OpenEMR team needs to purge secrets from their GitHub repository and revoke secrets that were leaked.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1746,11 +1774,13 @@
                 "text": "PHP Logs\n/var/log"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1764,13 +1794,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "782b6ebd-fa85-47cc-abdb-4bcb17b102a0",
+                  "title": "Heartbeat logging",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Technique: Elevation of privilege\nCard: Repudiation J\nDescription: An attacker can edit logs and there is no way to tell (perhaps because there is no heartbeat option for the logging system)\n\nWe did not find any heart-beat mechanisms for OpenEMRs PHP logger",
+                  "mitigation": "The PHP logger should include a heart-beat service that ensures logging service quality",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1787,8 +1831,8 @@
                 "text": "OpenEMR\nAppointments"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1802,12 +1846,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f52e747c-15db-48da-9a25-e2fd2b66d6a3",
+                  "title": "Input bypassing",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Technique: Elevation of privilege\nCard: Tampering Q\nDescription: An attacker can change parameters over a trust boundary and after validation (for example, important parameters in a hidden field in HTML, or passing a pointer to critical memory)\n\nWe can create appointments for users that do not exist in OpenEMR",
+                  "mitigation": "Server side validation should include checking if a patient actually exists before an appointment is created.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -1816,6 +1874,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 8
   }
 }
