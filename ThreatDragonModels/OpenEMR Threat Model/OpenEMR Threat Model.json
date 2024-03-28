@@ -1810,7 +1810,21 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ed80f154-daea-4daf-8ce5-538ec5e0da55",
+                  "title": "Encryption of health reports",
+                  "status": "NotApplicable",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Technique: Cornucopia\nCard: Cryptography 8\nDescription: Eoin can access stored business data (e.g. passwords, session identifiers, PII, cardholder data) because it is not securely encrypted or securely hashed\n\nOpenEMR stores a lot of PII and health data for patients, which is very sensitive and should be safe-guarded using globally accepted standards.",
+                  "mitigation": "PII and health documents should be encrypted as OpenEMR deals with a lot of health data.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1953,6 +1967,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 14
+    "threatTop": 15
   }
 }
