@@ -1492,6 +1492,19 @@
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "23c34ec1-df0d-4505-9e61-abbe20aca888",
+                  "title": "Password entry",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Technique: Cornucopia\nCard: Authentication 3\nDescription: Muhammad can obtain a user's password or other secrets such as security questions, by observation during entry, or from a local cache, or from memory, or in transit, or by reading it from some unprotected location, or because it is widely known, or because it never expires, or because the user cannot change her own password\n\nOpenEMR only provides functionality to enter text-based passwords. This opens up the opportunity for an attacker to observe the password being entered.\nThis threat applies to all actors in the system.",
+                  "mitigation": "Include multiple factor authentication, and alternate methods like biometric login.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
                 }
               ]
             }
@@ -1914,6 +1927,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 11
+    "threatTop": 12
   }
 }
