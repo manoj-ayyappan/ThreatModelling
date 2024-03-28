@@ -1722,6 +1722,19 @@
                   "new": false,
                   "number": 10,
                   "score": ""
+                },
+                {
+                  "id": "947e3d4c-b1a1-4b48-bde2-8547ca933725",
+                  "title": "Viewing another patients data",
+                  "status": "NotApplicable",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Technique: Cornucopia\nCard: Authorization 6\nDescription: Sven can reuse a temporary password because the user does not have to change it on first use, or it has too long or no expiry, or it does not use an outof-band delivery method (e.g. post, mobile app, SMS)\n\nOne patient can view another patient's data by changing the patient's ID in the URL.",
+                  "mitigation": "Tokens should be used to validate if a user is authorized to access the requested resource.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
                 }
               ]
             }
@@ -1940,6 +1953,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 13
+    "threatTop": 14
   }
 }
