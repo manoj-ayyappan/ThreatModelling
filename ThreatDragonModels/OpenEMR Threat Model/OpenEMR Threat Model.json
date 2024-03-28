@@ -1603,8 +1603,8 @@
                 "text": "Patient"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1618,9 +1618,23 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7e02f3eb-964f-4340-b55b-5709d216949b",
+                  "title": "Erasure of data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Unawareness",
+                  "description": "Technique: LINDDUN\nCard: No erasure or rectification U4\nDescription: The data subject cannot request erasure or rectification of personal data.\n\nData subject cannot request erasure of their data. Patients in the OpenEMR system cannot request erasure of data from the system, even if they would want to get out of the system.",
+                  "mitigation": "OpenEMR should provide an option for patients to erase all their data, when they delete their accounts.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2039,6 +2053,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 20
+    "threatTop": 21
   }
 }
