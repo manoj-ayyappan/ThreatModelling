@@ -1484,7 +1484,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Detectability",
-                  "description": "Technique: LINDDUN\nCard: Detectable at storage 4\nDescription: The misactor can detect that there are (more) data stored in the database.\n\nSQL injection attacks could reveal more information about a data store.",
+                  "description": "Technique: LINDDUN\nCard: Detectable at storage D4\nDescription: The misactor can detect that there are (more) data stored in the database.\n\nSQL injection attacks could reveal more information about a data store.",
                   "mitigation": "Inputs should be parameterized, ORMs can be used and fields can be sanitized before they are passed to the query.",
                   "modelType": "Generic",
                   "new": false,
