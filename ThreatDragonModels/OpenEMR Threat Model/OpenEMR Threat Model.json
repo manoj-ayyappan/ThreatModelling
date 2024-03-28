@@ -1047,54 +1047,6 @@
               "protocol": "",
               "threats": []
             },
-            "id": "933059d8-d469-42b1-8c56-d7043f3bfcfa",
-            "labels": [
-              "Log entry"
-            ],
-            "source": {
-              "cell": "c38b5b30-cc12-4750-881e-20980d2133b6"
-            },
-            "target": {
-              "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": -410
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Log entry",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
             "id": "d59962a2-7e8f-4d7f-bc0f-a77a22bfbaa9",
             "labels": [
               "Log entry"
@@ -1421,6 +1373,69 @@
             "target": {
               "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log entry",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "2115065b-a81a-47d9-bb4f-4dec25857cdd",
+                  "title": "Patients personal details from logs",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Non-repudiation",
+                  "description": "Technique: LINDDUN\nCard: Credentials non-repudiation 5\nDescription: The retrieved data contains undeniable information.\n\nIn case medications or prescriptions are added for a patient, and a log is generated for this, then personal details of the patient can be obtained from the log.",
+                  "mitigation": "A randomly generated user ID should be used to obfuscate the related patient. Special coding review guidelines should be enforced to make sure that sensitive information is not logged.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "933059d8-d469-42b1-8c56-d7043f3bfcfa",
+            "labels": [
+              "Log entry"
+            ],
+            "source": {
+              "cell": "c38b5b30-cc12-4750-881e-20980d2133b6"
+            },
+            "target": {
+              "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": -410
+              }
+            ]
           },
           {
             "position": {
@@ -2008,6 +2023,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 18
+    "threatTop": 19
   }
 }
