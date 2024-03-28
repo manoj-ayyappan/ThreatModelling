@@ -1451,11 +1451,13 @@
                 "text": "MySQL"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1469,13 +1471,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e87be057-0738-4a69-9fe2-bfe37173296a",
+                  "title": "SQL injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Detectability",
+                  "description": "Technique: LINDDUN\nCard: Detectable at storage 4\nDescription: The misactor can detect that there are (more) data stored in the database.\n\nSQL injection attacks could reveal more information about a data store.",
+                  "mitigation": "Inputs should be parameterized, ORMs can be used and fields can be sanitized before they are passed to the query.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2023,6 +2039,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 19
+    "threatTop": 20
   }
 }
