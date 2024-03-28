@@ -21,7 +21,7 @@
     "diagrams": [
       {
         "id": 3,
-        "title": "OpenEMR diagram",
+        "title": "OpenEMR data-flow diagram",
         "diagramType": "Generic",
         "placeholder": "OpenEMR diagram",
         "thumbnail": "./public/content/images/thumbnail.jpg",
@@ -1269,7 +1269,7 @@
             }
           }
         ],
-        "description": "OpenEMR diagram that includes threats found from Elevation of Privilege, Cornucopia and LINDDUN"
+        "description": "OpenEMR data-flow diagram that includes threats found from Elevation of Privilege, Cornucopia and LINDDUN"
       }
     ],
     "diagramTop": 4,
