@@ -1744,6 +1744,19 @@
                   "new": false,
                   "number": 16,
                   "score": ""
+                },
+                {
+                  "id": "b5ae6a64-2d39-47eb-a887-a37f7d62280d",
+                  "title": "Storage of more than required personal data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Non-compliance",
+                  "description": "Technique: LINDDUN\nCard: Disproportionate storage Nc5\nDescription: More personal data are being stored than required for the purpose.\n\nMore personal data is being stored in OpenEMR than is required, for example, in patient demographics, the income, employer information and religion are stored.",
+                  "mitigation": "Unwanted data fields should be removed from the system.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
                 }
               ]
             }
@@ -2053,6 +2066,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 21
+    "threatTop": 22
   }
 }
