@@ -923,6 +923,9 @@
               "threats": []
             },
             "id": "feabf614-51cc-4ee9-a5bf-8712ebac3692",
+            "labels": [
+              "Web Request"
+            ],
             "source": {
               "cell": "e967e2b3-25ce-4f57-b2e1-b899d1dd2970"
             },
@@ -934,9 +937,6 @@
                 "x": 170,
                 "y": -490
               }
-            ],
-            "labels": [
-              "Web Request"
             ]
           },
           {
@@ -971,6 +971,9 @@
               "threats": []
             },
             "id": "ff5fad35-e3e3-4aea-8bf3-fdf2c3ca338d",
+            "labels": [
+              "Web Response"
+            ],
             "source": {
               "cell": "86b78585-41e8-4490-a9e3-48adf7e425c7"
             },
@@ -982,9 +985,6 @@
                 "x": 130,
                 "y": -450
               }
-            ],
-            "labels": [
-              "Web Response"
             ]
           },
           {
@@ -1019,6 +1019,9 @@
               "threats": []
             },
             "id": "ca57803a-4bac-486d-80c9-61a12a4f4671",
+            "labels": [
+              "Query"
+            ],
             "source": {
               "cell": "86b78585-41e8-4490-a9e3-48adf7e425c7"
             },
@@ -1030,57 +1033,6 @@
                 "x": 600,
                 "y": -570
               }
-            ],
-            "labels": [
-              "Query"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "1479a879-8896-4ac6-87c8-6a1fb042a050",
-            "source": {
-              "cell": "35fbe5e1-5535-4641-946c-ab4d72404ada"
-            },
-            "target": {
-              "cell": "86b78585-41e8-4490-a9e3-48adf7e425c7"
-            },
-            "vertices": [
-              {
-                "x": 600,
-                "y": -550
-              }
-            ],
-            "labels": [
-              "Response"
             ]
           },
           {
@@ -1173,15 +1125,15 @@
               "threats": []
             },
             "id": "933059d8-d469-42b1-8c56-d7043f3bfcfa",
+            "labels": [
+              "Log entry"
+            ],
             "source": {
               "cell": "c38b5b30-cc12-4750-881e-20980d2133b6"
             },
             "target": {
               "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
             },
-            "labels": [
-              "Log entry"
-            ],
             "vertices": [
               {
                 "x": 640,
@@ -1221,6 +1173,9 @@
               "threats": []
             },
             "id": "d59962a2-7e8f-4d7f-bc0f-a77a22bfbaa9",
+            "labels": [
+              "Log entry"
+            ],
             "source": {
               "cell": "b2aca111-5997-4119-8449-d1cba5381912"
             },
@@ -1232,9 +1187,6 @@
                 "x": 600,
                 "y": -380
               }
-            ],
-            "labels": [
-              "Log entry"
             ]
           },
           {
@@ -1269,6 +1221,9 @@
               "threats": []
             },
             "id": "e9733bdd-de16-425a-ae4d-85f3486cf4e7",
+            "labels": [
+              "Log entry"
+            ],
             "source": {
               "cell": "86b78585-41e8-4490-a9e3-48adf7e425c7"
             },
@@ -1280,9 +1235,6 @@
                 "x": 550,
                 "y": -350
               }
-            ],
-            "labels": [
-              "Log entry"
             ]
           },
           {
@@ -1317,15 +1269,15 @@
               "threats": []
             },
             "id": "a73b5fce-1392-4037-b4e6-d45554d227ae",
+            "labels": [
+              "Log entry"
+            ],
             "source": {
               "cell": "682b4d68-6485-42fc-abe4-885e65ec33f9"
             },
             "target": {
               "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
-            },
-            "labels": [
-              "Log entry"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1359,6 +1311,9 @@
               "threats": []
             },
             "id": "b5b73b98-110c-432c-a090-bae1faa0d5df",
+            "labels": [
+              "Log entry"
+            ],
             "source": {
               "cell": "f8668cab-b74f-43f1-9a50-5cad51f57b10"
             },
@@ -1370,9 +1325,6 @@
                 "x": 580,
                 "y": -270
               }
-            ],
-            "labels": [
-              "Log entry"
             ]
           },
           {
@@ -1401,6 +1353,54 @@
               {
                 "x": 750,
                 "y": -350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Result",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "1479a879-8896-4ac6-87c8-6a1fb042a050",
+            "labels": [
+              "Result"
+            ],
+            "source": {
+              "cell": "35fbe5e1-5535-4641-946c-ab4d72404ada"
+            },
+            "target": {
+              "cell": "86b78585-41e8-4490-a9e3-48adf7e425c7"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": -550
               }
             ]
           },
@@ -1753,8 +1753,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "a2b225de-1427-48ea-8965-fa091ec4c78a",
             "zIndex": 22,
+            "id": "a2b225de-1427-48ea-8965-fa091ec4c78a",
             "data": {
               "type": "tm.Store",
               "name": "PHP Logs\n/var/log",
@@ -1791,8 +1791,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "86b78585-41e8-4490-a9e3-48adf7e425c7",
             "zIndex": 23,
+            "id": "86b78585-41e8-4490-a9e3-48adf7e425c7",
             "data": {
               "type": "tm.Process",
               "name": "OpenEMR\nAppointments",
