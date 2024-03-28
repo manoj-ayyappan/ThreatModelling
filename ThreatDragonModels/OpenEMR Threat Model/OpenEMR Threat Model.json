@@ -1889,7 +1889,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Identifiability",
-                  "description": "Technique: LINDDUN\nCard: Identifying Credentials 6\nDescription: Personal data being stored can be identified (because they are insufficiently minimized/de-identified before storage).\n\nPersonal data or documents stored on the system can identify the patient.",
+                  "description": "Technique: LINDDUN\nCard: Identifying Stored Data I6\nDescription: Personal data being stored can be identified (because they are insufficiently minimized/de-identified before storage).\n\nPersonal data or documents stored on the system can identify the patient.",
                   "mitigation": "Personal data and documents should be encrypted using strong cryptographic algorithms.",
                   "modelType": "Generic",
                   "new": false,
