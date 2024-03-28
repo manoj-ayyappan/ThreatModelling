@@ -1917,6 +1917,19 @@
                   "new": false,
                   "number": 9,
                   "score": ""
+                },
+                {
+                  "id": "51666d8c-a3d1-496f-82cf-1efb65309048",
+                  "title": "Improper server configuration",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Technique: Cornucopia\nCard: Authorization 5\nDescription: Javier can use default, test or easily guessable credentials to authenticate, or can use an old account or an account not necessary for the application\n\nIf the Apache server is not configured correctly, an attacker could gain information of the folder structure.\nThis threat applies to all processes in this model.",
+                  "mitigation": "The Apache server configurations should be verified.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
                 }
               ]
             }
@@ -1927,6 +1940,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 12
+    "threatTop": 13
   }
 }
