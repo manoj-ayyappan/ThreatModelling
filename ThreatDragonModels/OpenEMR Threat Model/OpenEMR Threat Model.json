@@ -1191,48 +1191,6 @@
               "protocol": "",
               "threats": []
             },
-            "id": "a73b5fce-1392-4037-b4e6-d45554d227ae",
-            "labels": [
-              "Log entry"
-            ],
-            "source": {
-              "cell": "682b4d68-6485-42fc-abe4-885e65ec33f9"
-            },
-            "target": {
-              "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Log entry",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
             "id": "b5b73b98-110c-432c-a090-bae1faa0d5df",
             "labels": [
               "Log entry"
@@ -1341,6 +1299,9 @@
               "hasOpenThreats": false
             },
             "id": "b2e56a93-9d2e-4c7c-8fa1-39221f21153f",
+            "labels": [
+              ""
+            ],
             "source": {
               "x": 310,
               "y": -780
@@ -1354,9 +1315,6 @@
                 "x": 260,
                 "y": -490
               }
-            ],
-            "labels": [
-              ""
             ]
           },
           {
@@ -1406,6 +1364,63 @@
                 "y": -310
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log entry",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "aca7ac34-ef2b-42ef-9aeb-80fbc051712c",
+                  "title": "User credentials used for linking with actions",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Linkability",
+                  "description": "Technique: LINDDUN\nCard: Linkability of Credentials 1\nDescription: Actions and data can be linked by re-using credentials (for multiple system interactions).\n\nActions and data can be linked by re-using credentials. The same username is used to maintain action logs which gives more information to link the actions and data mentioned in logs to a specific user.",
+                  "mitigation": "A randomly generated user ID should be used instead of the user name. This will ensure that the logs do not provide any additional information about the user's actions.",
+                  "modelType": "Generic",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "a73b5fce-1392-4037-b4e6-d45554d227ae",
+            "labels": [
+              "Log entry"
+            ],
+            "source": {
+              "cell": "682b4d68-6485-42fc-abe4-885e65ec33f9"
+            },
+            "target": {
+              "cell": "a2b225de-1427-48ea-8965-fa091ec4c78a"
+            }
           },
           {
             "position": {
@@ -1980,6 +1995,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
